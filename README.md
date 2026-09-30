@@ -56,7 +56,7 @@ Deux bots Telegram distincts :
 Prérequis : [Claude Code](https://code.claude.com), Node.js 20+, WP-CLI, accès SSH à tes hébergeurs.
 
 ```bash
-git clone https://github.com/freddy082898/IA-AGENCY.git && cd IA-AGENCY
+git clone https://github.com/freddygbaguidi08-del/IA-AGENCY.git && cd IA-AGENCY
 cd mcp/validation-telegram && npm install && cd ../..
 ```
 

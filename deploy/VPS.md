@@ -26,7 +26,7 @@ tant qu'il est allumé (voir README, « Démarrage rapide »). Le VPS vient ensu
 ssh root@<IP-du-VPS>
 
 # 2. Installation automatique
-curl -fsSL https://raw.githubusercontent.com/freddy082898/IA-AGENCY/main/deploy/install-vps.sh | bash
+curl -fsSL https://raw.githubusercontent.com/freddygbaguidi08-del/IA-AGENCY/main/deploy/install-vps.sh | bash
 ```
 
 > Si le dépôt est privé, clone-le d'abord (`git clone` avec un token GitHub) puis lance

@@ -4,7 +4,7 @@
 set -euo pipefail
 
 UTILISATEUR="agence"
-DEPOT="https://github.com/freddy082898/IA-AGENCY.git"
+DEPOT="https://github.com/freddygbaguidi08-del/IA-AGENCY.git"
 
 echo "==> Mise à jour du système et paquets de base"
 apt-get update -y && apt-get upgrade -y
