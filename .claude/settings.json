@@ -1,0 +1,54 @@
+{
+  "$schema": "https://json.schemastore.org/claude-code-settings.json",
+  "permissions": {
+    "allow": [
+      "Read",
+      "Glob",
+      "Grep",
+      "WebSearch",
+      "WebFetch",
+      "Write(./clients/**)",
+      "Edit(./clients/**)",
+      "Bash(wp @*-staging *)",
+      "Bash(wp cli *)",
+      "Bash(npx lighthouse *)",
+      "Bash(ls *)",
+      "Bash(mkdir *)",
+      "Bash(date *)",
+      "Bash(git status *)",
+      "Bash(git diff *)",
+      "Bash(git log *)",
+      "Bash(git add *)",
+      "Bash(git commit *)",
+      "mcp__validation-telegram__demander_validation",
+      "mcp__validation-telegram__notifier",
+      "mcp__playwright"
+    ],
+    "ask": [
+      "Bash(git push *)"
+    ],
+    "deny": [
+      "Read(./.env)",
+      "Read(./clients/**/.secrets.env)",
+      "Bash(cat *.secrets.env*)",
+      "Bash(sudo *)",
+      "Bash(rm -rf /*)",
+      "Bash(rm -rf ~*)"
+    ]
+  },
+  "enableAllProjectMcpServers": true,
+  "hooks": {
+    "PreToolUse": [
+      {
+        "matcher": "Bash",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "node \"$CLAUDE_PROJECT_DIR/scripts/hooks/garde-fou.mjs\"",
+            "timeout": 900
+          }
+        ]
+      }
+    ]
+  }
+}

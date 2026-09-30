@@ -1,0 +1,9 @@
+# Alias WP-CLI : un couple staging / prod par client.
+# Usage : wp @boulangerie-martin-staging plugin list
+# Prérequis : accès SSH par clé au serveur + WP-CLI installé chez l'hébergeur
+# (o2switch, Hostinger, OVH Cloud Web, Infomaniak… le proposent).
+
+@exemple-staging:
+  ssh: utilisateur@serveur.hebergeur.fr/home/utilisateur/staging.exemple.fr
+@exemple-prod:
+  ssh: utilisateur@serveur.hebergeur.fr/home/utilisateur/public_html

@@ -1,0 +1,12 @@
+{
+  "mcpServers": {
+    "validation-telegram": {
+      "command": "node",
+      "args": ["${CLAUDE_PROJECT_DIR:-.}/mcp/validation-telegram/server.js"]
+    },
+    "playwright": {
+      "command": "npx",
+      "args": ["-y", "@playwright/mcp@latest", "--headless", "--isolated"]
+    }
+  }
+}

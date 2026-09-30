@@ -1,0 +1,16 @@
+{
+  "name": "validation-telegram",
+  "version": "1.0.0",
+  "description": "Serveur MCP de validation humaine via Telegram pour IA-AGENCY",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "license": "MIT",
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.31.0",
+    "zod": "^4.6.5"
+  },
+  "type": "module",
+  "private": true
+}

@@ -1,0 +1,15 @@
+[Unit]
+Description=IA-AGENCY — session Claude Code de l'agence (tmux)
+After=network-online.target
+Wants=network-online.target
+
+[Service]
+Type=oneshot
+User=agence
+WorkingDirectory=/home/agence/IA-AGENCY
+ExecStart=/home/agence/IA-AGENCY/deploy/demarrer.sh
+ExecStop=/usr/bin/tmux kill-session -t agence
+RemainAfterExit=yes
+
+[Install]
+WantedBy=multi-user.target
